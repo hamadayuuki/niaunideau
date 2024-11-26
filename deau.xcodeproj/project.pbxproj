@@ -14,7 +14,7 @@
 		D417413B2CF583BC00D4F3D2 /* deauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417413A2CF583BC00D4F3D2 /* deauTests.swift */; };
 		D41741452CF583BC00D4F3D2 /* deauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741442CF583BC00D4F3D2 /* deauUITests.swift */; };
 		D41741472CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741462CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift */; };
-		D41741552CF584AD00D4F3D2 /* MyItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741542CF584AD00D4F3D2 /* MyItemsListView.swift */; };
+		D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		D41741402CF583BC00D4F3D2 /* deauUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deauUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41741442CF583BC00D4F3D2 /* deauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauUITests.swift; sourceTree = "<group>"; };
 		D41741462CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D41741542CF584AD00D4F3D2 /* MyItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsListView.swift; sourceTree = "<group>"; };
+		D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 		D41741532CF5848500D4F3D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D41741542CF584AD00D4F3D2 /* MyItemsListView.swift */,
+				D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41741552CF584AD00D4F3D2 /* MyItemsListView.swift in Sources */,
+				D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */,
 				D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */,
 				D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */,
 			);
