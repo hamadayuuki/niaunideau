@@ -23,6 +23,12 @@
 		D41741452CF583BC00D4F3D2 /* deauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741442CF583BC00D4F3D2 /* deauUITests.swift */; };
 		D41741472CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741462CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift */; };
 		D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */; };
+		D486C9B32CF6755E00FE2FF9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9B22CF6755E00FE2FF9 /* HTTPMethod.swift */; };
+		D486C9B62CF6756500FE2FF9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9B42CF6756500FE2FF9 /* APIClient.swift */; };
+		D486C9B72CF6756500FE2FF9 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9B52CF6756500FE2FF9 /* HTTPError.swift */; };
+		D486C9BD2CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9B92CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift */; };
+		D486C9BE2CF6756B00FE2FF9 /* CoordinateRecommendResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9BB2CF6756B00FE2FF9 /* CoordinateRecommendResponse.swift */; };
+		D486C9BF2CF6756B00FE2FF9 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D486C9B82CF6756B00FE2FF9 /* APIRequestProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,12 @@
 		D41741442CF583BC00D4F3D2 /* deauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauUITests.swift; sourceTree = "<group>"; };
 		D41741462CF583BC00D4F3D2 /* deauUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendView.swift; sourceTree = "<group>"; };
+		D486C9B22CF6755E00FE2FF9 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D486C9B42CF6756500FE2FF9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D486C9B52CF6756500FE2FF9 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		D486C9B82CF6756B00FE2FF9 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		D486C9B92CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendRequest.swift; sourceTree = "<group>"; };
+		D486C9BB2CF6756B00FE2FF9 /* CoordinateRecommendResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		49A5DB892CF609EA00AB25A6 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D486C9B12CF674FD00FE2FF9 /* API */,
 				494548732CF625BE00DABF61 /* Entity */,
 				49A5DB8A2CF609FA00AB25A6 /* Google */,
 			);
@@ -200,6 +213,35 @@
 				D41741532CF5848500D4F3D2 /* CoordinateRecommend */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D486C9B12CF674FD00FE2FF9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D486C9BA2CF6756B00FE2FF9 /* Request */,
+				D486C9BC2CF6756B00FE2FF9 /* Response */,
+				D486C9B42CF6756500FE2FF9 /* APIClient.swift */,
+				D486C9B52CF6756500FE2FF9 /* HTTPError.swift */,
+				D486C9B22CF6755E00FE2FF9 /* HTTPMethod.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D486C9BA2CF6756B00FE2FF9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D486C9B82CF6756B00FE2FF9 /* APIRequestProtocol.swift */,
+				D486C9B92CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D486C9BC2CF6756B00FE2FF9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D486C9BB2CF6756B00FE2FF9 /* CoordinateRecommendResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				494548702CF6258400DABF61 /* CustomDatePicker.swift in Sources */,
+				D486C9B62CF6756500FE2FF9 /* APIClient.swift in Sources */,
+				D486C9B72CF6756500FE2FF9 /* HTTPError.swift in Sources */,
 				49A5DB862CF6090900AB25A6 /* ScheduleView.swift in Sources */,
 				49A5DB882CF6099C00AB25A6 /* ScheduleViewModel.swift in Sources */,
 				D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */,
@@ -342,6 +386,10 @@
 				D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */,
 				494548722CF625A100DABF61 /* CalendarView.swift in Sources */,
 				D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */,
+				D486C9B32CF6755E00FE2FF9 /* HTTPMethod.swift in Sources */,
+				D486C9BD2CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift in Sources */,
+				D486C9BE2CF6756B00FE2FF9 /* CoordinateRecommendResponse.swift in Sources */,
+				D486C9BF2CF6756B00FE2FF9 /* APIRequestProtocol.swift in Sources */,
 				49A5DB8C2CF60A0600AB25A6 /* GoogleCalendar.swift in Sources */,
 				49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */,
 				494548752CF625CE00DABF61 /* DateValue.swift in Sources */,
