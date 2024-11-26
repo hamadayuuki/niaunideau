@@ -150,20 +150,22 @@ struct CustomDatePicker: View {
                 .frame(width: 15, height: 15)
                 .foregroundStyle(color)
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(task.time)
-                    .font(.system(size: 14, weight: .regular, design: .rounded))
-                    .foregroundStyle(.gray)
+            NavigationLink(destination: CoordinateRecommendView(eventName: task.title)) {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(task.time)
+                        .font(.system(size: 14, weight: .regular, design: .rounded))
+                        .foregroundStyle(.gray)
 
-                Text(task.title)
-                    .frame(width: 230, height: 60, alignment: .leading)
-                    .padding(.horizontal, 24)
-                    .background(color.opacity(0.5))
-                    .cornerRadius(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(.gray, lineWidth: 0.3)
-                    )
+                    Text(task.title)
+                        .frame(width: 230, height: 60, alignment: .leading)
+                        .padding(.horizontal, 24)
+                        .background(color.opacity(0.5))
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 0.3)
+                        )
+                }
             }
         }
     }

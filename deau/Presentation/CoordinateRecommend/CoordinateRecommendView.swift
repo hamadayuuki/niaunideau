@@ -19,12 +19,19 @@ struct Coordinate: Identifiable {
 }
 
 struct CoordinateRecommendView: View {
+    let eventName: String
 
     @State private var vm: CoordinateRecommendViewModel = .init()
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 12) {
+                Text(eventName)
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
+                    .foregroundStyle(.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.bottom, 24)
+
                 ForEach(0..<3) { i in
                     HStack(spacing: 12) {
                         coordinateCard(
@@ -45,6 +52,7 @@ struct CoordinateRecommendView: View {
                     }
                 }
             }
+            .padding()
         }
     }
 
@@ -95,6 +103,6 @@ struct CoordinateRecommendView: View {
 }
 
 #Preview {
-    CoordinateRecommendView()
+    CoordinateRecommendView(eventName: "クリスマスコーデ")
 }
 

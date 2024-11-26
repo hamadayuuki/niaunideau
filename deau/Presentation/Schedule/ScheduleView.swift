@@ -12,7 +12,9 @@ struct ScheduleView: View {
 
     var body: some View {
         VStack {
-            CalendarView()
+            NavigationStack {
+                CalendarView()
+            }
         }
     }
 }
