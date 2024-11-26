@@ -12,11 +12,7 @@ struct ScheduleView: View {
 
     var body: some View {
         VStack {
-            Button(action: {
-                vm.connctGoogleButtonTapped()
-            }) {
-                Text("Googleカレンダーと連携")
-            }
+            CalendarView()
         }
     }
 }
