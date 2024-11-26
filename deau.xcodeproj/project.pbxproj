@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */; };
+		49A5DB862CF6090900AB25A6 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB852CF6090500AB25A6 /* ScheduleView.swift */; };
+		49A5DB882CF6099C00AB25A6 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB872CF6099200AB25A6 /* ScheduleViewModel.swift */; };
+		49A5DB8C2CF60A0600AB25A6 /* GoogleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB8B2CF60A0000AB25A6 /* GoogleCalendar.swift */; };
 		D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741292CF583B900D4F3D2 /* deauApp.swift */; };
 		D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417412B2CF583B900D4F3D2 /* ContentView.swift */; };
 		D417412E2CF583BB00D4F3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417412D2CF583BB00D4F3D2 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendViewModel.swift; sourceTree = "<group>"; };
+		49A5DB852CF6090500AB25A6 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		49A5DB872CF6099200AB25A6 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
+		49A5DB8B2CF60A0000AB25A6 /* GoogleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendar.swift; sourceTree = "<group>"; };
 		D41741262CF583B900D4F3D2 /* deau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41741292CF583B900D4F3D2 /* deauApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauApp.swift; sourceTree = "<group>"; };
 		D417412B2CF583B900D4F3D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A5DB842CF608F600AB25A6 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				49A5DB852CF6090500AB25A6 /* ScheduleView.swift */,
+				49A5DB872CF6099200AB25A6 /* ScheduleViewModel.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		49A5DB892CF609EA00AB25A6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				49A5DB8A2CF609FA00AB25A6 /* Google */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		49A5DB8A2CF609FA00AB25A6 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				49A5DB8B2CF60A0000AB25A6 /* GoogleCalendar.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 		D417411D2CF583B900D4F3D2 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D41741562CF5875F00D4F3D2 /* Presentation */,
+				49A5DB892CF609EA00AB25A6 /* Domain */,
 				D41741292CF583B900D4F3D2 /* deauApp.swift */,
 				D417412B2CF583B900D4F3D2 /* ContentView.swift */,
 				D417412D2CF583BB00D4F3D2 /* Assets.xcassets */,
@@ -135,8 +167,8 @@
 		D41741532CF5848500D4F3D2 /* CoordinateRecommend */ = {
 			isa = PBXGroup;
 			children = (
-				49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */,
 				D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */,
+				49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */,
 			);
 			path = CoordinateRecommend;
 			sourceTree = "<group>";
@@ -144,6 +176,7 @@
 		D41741562CF5875F00D4F3D2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				49A5DB842CF608F600AB25A6 /* Schedule */,
 				D41741532CF5848500D4F3D2 /* CoordinateRecommend */,
 			);
 			path = Presentation;
@@ -279,9 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A5DB862CF6090900AB25A6 /* ScheduleView.swift in Sources */,
+				49A5DB882CF6099C00AB25A6 /* ScheduleViewModel.swift in Sources */,
 				D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */,
 				D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */,
 				D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */,
+				49A5DB8C2CF60A0600AB25A6 /* GoogleCalendar.swift in Sources */,
 				49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

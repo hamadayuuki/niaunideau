@@ -11,7 +11,7 @@ import SwiftUI
 struct deauApp: App {
     var body: some Scene {
         WindowGroup {
-            CoordinateRecommendView()
+            ScheduleView()
         }
     }
 }
