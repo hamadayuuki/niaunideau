@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */; };
 		D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41741292CF583B900D4F3D2 /* deauApp.swift */; };
 		D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417412B2CF583B900D4F3D2 /* ContentView.swift */; };
 		D417412E2CF583BB00D4F3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D417412D2CF583BB00D4F3D2 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendViewModel.swift; sourceTree = "<group>"; };
 		D41741262CF583B900D4F3D2 /* deau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41741292CF583B900D4F3D2 /* deauApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deauApp.swift; sourceTree = "<group>"; };
 		D417412B2CF583B900D4F3D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,18 +132,19 @@
 			path = deauUITests;
 			sourceTree = "<group>";
 		};
-		D41741532CF5848500D4F3D2 /* View */ = {
+		D41741532CF5848500D4F3D2 /* CoordinateRecommend */ = {
 			isa = PBXGroup;
 			children = (
+				49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */,
 				D41741542CF584AD00D4F3D2 /* CoordinateRecommendView.swift */,
 			);
-			path = View;
+			path = CoordinateRecommend;
 			sourceTree = "<group>";
 		};
 		D41741562CF5875F00D4F3D2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				D41741532CF5848500D4F3D2 /* View */,
+				D41741532CF5848500D4F3D2 /* CoordinateRecommend */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */,
 				D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */,
 				D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */,
+				49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

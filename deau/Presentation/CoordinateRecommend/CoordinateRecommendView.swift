@@ -19,14 +19,8 @@ struct Coordinate: Identifiable {
 }
 
 struct CoordinateRecommendView: View {
-    let coordinates: [Coordinate] = [
-        .init(imageName: "coordinate01", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon01", userName: "だーはま", userHeight: "199cm", isFavorite: false),
-        .init(imageName: "coordinate02", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon02", userName: "だーはま", userHeight: "199cm", isFavorite: true),
-        .init(imageName: "coordinate03", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon01", userName: "だーはま", userHeight: "199cm", isFavorite: true),
-        .init(imageName: "coordinate04", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon02", userName: "だーはま", userHeight: "199cm", isFavorite: false),
-        .init(imageName: "coordinate05", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon01", userName: "だーはま", userHeight: "199cm", isFavorite: false),
-        .init(imageName: "coordinate06", title: "クリスマスに映える服", time: "21時間前", userIconName: "userIcon02", userName: "だーはま", userHeight: "199cm", isFavorite: true),
-    ]
+
+    @State private var vm: CoordinateRecommendViewModel = .init()
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -34,13 +28,19 @@ struct CoordinateRecommendView: View {
                 ForEach(0..<3) { i in
                     HStack(spacing: 12) {
                         coordinateCard(
-                            coordinate: coordinates[i * 2],
-                            cardSize: .init(width: 400, height: 600)
+                            coordinate: vm.coordinates[i * 2],
+                            cardSize: .init(width: 400, height: 600),
+                            favoriteButtonTapped: {
+                                vm.favoriteButtonTapped(index: i * 2)
+                            }
                         )
 
                         coordinateCard(
-                            coordinate: coordinates[i*2 + 1],
-                            cardSize: .init(width: 400, height: 600)
+                            coordinate: vm.coordinates[i * 2 + 1],
+                            cardSize: .init(width: 400, height: 600),
+                            favoriteButtonTapped: {
+                                vm.favoriteButtonTapped(index: i * 2 + 1)
+                            }
                         )
                     }
                 }
@@ -48,8 +48,7 @@ struct CoordinateRecommendView: View {
         }
     }
 
-
-    private func coordinateCard(coordinate: Coordinate, cardSize: CGSize) -> some View {
+    private func coordinateCard(coordinate: Coordinate, cardSize: CGSize, favoriteButtonTapped: @escaping () -> Void) -> some View {
         VStack(spacing: 8) {
             ZStack {
                 Image(coordinate.imageName)
@@ -58,13 +57,17 @@ struct CoordinateRecommendView: View {
                     .frame(width: cardSize.width * 0.42, height: cardSize.height * 0.42)
                     .clipped()
 
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .frame(width: 23, height: 20)
-                    .offset(x: cardSize.width * 0.42 / 2 - 20, y: cardSize.height * 0.42 / 2 - 20)
-                    .foregroundStyle(coordinate.isFavorite ? .red : .white)
+                Button(action: {
+                    favoriteButtonTapped()
+                }) {
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .frame(width: 23, height: 20)
+                        .foregroundStyle(coordinate.isFavorite ? .red : .white)
+                }
+                .padding(12)
+                .frame(width: cardSize.width * 0.42, height: cardSize.height * 0.42, alignment: .bottomTrailing)
             }
-            //.frame(width: cardSize.width * 0.42, height: cardSize.height * 0.42)
 
             Divider()
                 .frame(height: 1)
