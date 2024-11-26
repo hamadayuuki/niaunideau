@@ -271,9 +271,6 @@
 			);
 			mainGroup = D417411D2CF583B900D4F3D2;
 			packageReferences = (
-				49A5DB8D2CF60E3300AB25A6 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
-				49A5DB8E2CF610C900AB25A6 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
-				49A5DB8F2CF610E100AB25A6 /* XCRemoteSwiftPackageReference "GTMAppAuth" */,
 			);
 			productRefGroup = D41741272CF583B900D4F3D2 /* Products */;
 			projectDirPath = "";
@@ -653,33 +650,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		49A5DB8D2CF60E3300AB25A6 /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		49A5DB8E2CF610C900AB25A6 /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/openid/AppAuth-iOS.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.6;
-			};
-		};
-		49A5DB8F2CF610E100AB25A6 /* XCRemoteSwiftPackageReference "GTMAppAuth" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GTMAppAuth";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.1.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D417411E2CF583B900D4F3D2 /* Project object */;
 }
