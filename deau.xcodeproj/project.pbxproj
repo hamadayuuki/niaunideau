@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		494548702CF6258400DABF61 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945486F2CF6257900DABF61 /* CustomDatePicker.swift */; };
-		494548722CF625A100DABF61 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494548712CF6259E00DABF61 /* CalendarView.swift */; };
 		494548752CF625CE00DABF61 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494548742CF625C900DABF61 /* DateValue.swift */; };
 		494548772CF625DB00DABF61 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494548762CF625D700DABF61 /* Task.swift */; };
 		49A5DB832CF5E33F00AB25A6 /* CoordinateRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */; };
@@ -50,7 +49,6 @@
 
 /* Begin PBXFileReference section */
 		4945486F2CF6257900DABF61 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
-		494548712CF6259E00DABF61 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		494548742CF625C900DABF61 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		494548762CF625D700DABF61 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		49A5DB822CF5E33A00AB25A6 /* CoordinateRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRecommendViewModel.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		49A5DB842CF608F600AB25A6 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				494548712CF6259E00DABF61 /* CalendarView.swift */,
 				4945486F2CF6257900DABF61 /* CustomDatePicker.swift */,
 				49A5DB852CF6090500AB25A6 /* ScheduleView.swift */,
 				49A5DB872CF6099200AB25A6 /* ScheduleViewModel.swift */,
@@ -384,7 +381,6 @@
 				D41741552CF584AD00D4F3D2 /* CoordinateRecommendView.swift in Sources */,
 				494548772CF625DB00DABF61 /* Task.swift in Sources */,
 				D417412C2CF583B900D4F3D2 /* ContentView.swift in Sources */,
-				494548722CF625A100DABF61 /* CalendarView.swift in Sources */,
 				D417412A2CF583B900D4F3D2 /* deauApp.swift in Sources */,
 				D486C9B32CF6755E00FE2FF9 /* HTTPMethod.swift in Sources */,
 				D486C9BD2CF6756B00FE2FF9 /* CoordinateRecommendRequest.swift in Sources */,

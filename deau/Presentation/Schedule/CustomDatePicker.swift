@@ -30,6 +30,7 @@ enum Day {
 }
 
 struct CustomDatePicker: View {
+
     @Binding var currentDate: Date
 
     // Month update on arrow button clicks...
@@ -128,7 +129,9 @@ struct CustomDatePicker: View {
                 }){
                     VStack(spacing: 24) {
                         ForEach(task.task) { task in
-                            schedule(task: task, color: .pink)
+                            NavigationLink(destination: CoordinateRecommendView(eventName: "")) {
+                                schedule(task: task, color: .pink)
+                            }
                         }
                     }
                 }

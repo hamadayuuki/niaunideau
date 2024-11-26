@@ -21,7 +21,7 @@ struct Coordinate: Identifiable {
 struct CoordinateRecommendView: View {
     let eventName: String
 
-    @State private var vm: CoordinateRecommendViewModel = .init()
+    @State private var vm: CoordinateRecommendViewModel = .init(apiClient: APIClient())
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -53,6 +53,9 @@ struct CoordinateRecommendView: View {
                 }
             }
             .padding()
+            .task {
+                await vm.onAppear()
+            }
         }
     }
 
